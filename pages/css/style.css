@@ -13,6 +13,7 @@ body {
     background-position: center top;
     min-height: 100%;
     margin: 0;
+    width: 100%;
     height: 100vh;
 }
 
@@ -72,6 +73,8 @@ h1, p {
 .content {
     display:flex;
     justify-content: center;
+    align-items: center;
+    margin: 0;
 }
 
 .headshot {
@@ -80,27 +83,15 @@ h1, p {
 }
 
 @media (max-width: 500px) {
-
-    .header {
-        padding: 0px 0px;
-        margin: 0px;
-        background-color: rgba(100, 100, 100, .5);
-        display:flex;
-    }
-    
-    .header a {
-        border:1px;
-        background-color: #5f6f3a;
-        color:white;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 8px;
-        margin: 12px 12px;
-        padding: 12px 30px;
-        width: 70px;
-        text-decoration: none;
-        display:flex;
+    .header{
         flex-wrap: wrap;
-        justify-content:center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size:x-large;
+    }
+    p{
+        font-size:medium;
     }
 }
