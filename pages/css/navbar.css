@@ -1,0 +1,22 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat:no-repeat;
+    background-position: center top;
+}
+
+.header a {
+    border:1px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 32px 3px;
+    padding: 15px 32px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    background-color: grey;
+    color:white;
+}
