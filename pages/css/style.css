@@ -19,8 +19,11 @@ body {
 .header {
     padding: 0px 0px;
     margin: 0px;
-    background-color: rgba(100, 100, 100, .5);
     display:flex;
+}
+
+body>.header {
+    background-color: rgba(100, 100, 100, .5);
 }
 
 .header a {
@@ -55,6 +58,10 @@ body {
     color:white;
     margin:20px;
     padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
 h1, p {
@@ -73,8 +80,27 @@ h1, p {
 }
 
 @media (max-width: 500px) {
+
     .header {
-       flex-wrap: wrap;
-       justify-content: center;
+        padding: 0px 0px;
+        margin: 0px;
+        background-color: rgba(100, 100, 100, .5);
+        display:flex;
+    }
+    
+    .header a {
+        border:1px;
+        background-color: #5f6f3a;
+        color:white;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 8px;
+        margin: 12px 12px;
+        padding: 12px 30px;
+        width: 70px;
+        text-decoration: none;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
     }
 }
