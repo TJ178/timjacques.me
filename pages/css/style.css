@@ -58,6 +58,7 @@ body>.header {
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    text-align: center;
 }
 
 h1, p {
@@ -95,6 +96,21 @@ h1, p {
 
 .mobile-pdf {
     display: none;
+}
+
+.icon_links {
+    margin: 0px;
+    height: 50px;
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.icon_links a img {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width: 500px) {
