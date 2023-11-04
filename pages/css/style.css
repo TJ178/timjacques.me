@@ -42,23 +42,44 @@ body>.header {
     justify-content:center;
 }
 
+a{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .header a:hover {
     background-color: #495635;
     color:white;
 }
 
 .container {
-    background-color: rgba(69, 66, 49, 0.8);
+    background-color: rgba(69, 66, 49, 0.85);
     border-radius: 8px;
     width: 800px;
     color:white;
-    margin:20px;
+    margin:15px;
     padding: 10px;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-content:flex-start;
+    align-items:flex-start;
     text-align: center;
+}
+
+.container.project {
+    background-color: rgba(69, 66, 49, 0.85);
+    border-radius: 8px;
+    width: 80%;
+    color:white;
+    margin:15px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:flex-start;
+    align-items:center;
+    text-align: left;
 }
 
 h1, p {
@@ -69,7 +90,8 @@ h1, p {
 .content {
     display:flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
     margin: 0;
 }
 
@@ -111,6 +133,43 @@ h1, p {
     height: 50px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.container-header {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+    width:100%;
+    align-items:center;
+    justify-items: center;
+}
+
+.container-header h1 {
+    text-align: left;
+}
+.container-header p {
+    text-align: right;
+}
+
+.image-holder{
+    display:flex;
+    flex-wrap:wrap;   
+    width:100%;
+    justify-content:space-evenly;
+}
+.image-holder > div{
+    width: min-content;
+}
+
+.image-holder img {
+    height:300px;
+    width: auto;
+}
+
+.image-holder div p{
+    font-size:smaller;
+    padding-top:2px;
+    text-align:center;
 }
 
 @media (max-width: 500px) {

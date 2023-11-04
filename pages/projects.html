@@ -19,10 +19,264 @@
    </body>
 
    <div class="content">
-      <div class="container">
-         <h1>timjacques.me</h1>
+      <div class="container project">
+         <div class="container-header">
+            <h1>Bus Tracker</h1>
+            <p>November 2023</p>
+         </div>
+         <p>
+            At my new apartment, there's a bus stop about a 3 minute walk away that speeds up my commute to class by about 8 minutes.
+            I realized that I was checking Google Maps everyday for the transit times, and figured I could find a way to get realtime bus data on a screen in my apartment instead.
+            <br><br>
+            LA Metro offers a transit API with realtime data using Google's GTFS format. Unfortunately, this meant that I couldn't just use an ESP32, since the API would only send
+            the status of the entire bus system, rather than just one specific stop, which was about 3x as much data as the ESP32 has RAM.
+            <br><br>
+            The solution? Create a server that runs on a larger device to act as a middle-man.
+            <br> With that in mind, I have a server at home that grabs the bus data, parses it down to just the times of the next buses, and offers that up as an HTTP server.
+            Now, the ESP32 can just do a simple HTTP GET request, and we're in business.
+            <br><br>
+            Engineering is about spending 3 hours to save 30 seconds everyday right?
+            <br><br>
+            <a href="https://github.com/TJ178/lametro">Take a look at the code here!</a>
+         </p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>timjacques.me</h1>
+            <p>Fall 2023</p>
+         </div>
+         <p>
+            This website is one of my current projects! It's been fun to work with pure HTML and CSS.
+            I haven't done too much webdev, so this took me a bit to put together. Although, now I guess I could be a "fullstack"
+            engineer - from processor architecture all the way to frontend software!
+            <br><br><a href="https://github.com/TJ178/timjacques.me">Take a look at the code here!</a>
+         </p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>Discovering the Kroger API</h1>
+            <p>Summer 2023</p>
+         </div>
+         <p>
+            During Summer 2023, I lived with a group of mechanical engineers that always cooked together.
+            Each of the six of us would cook once a week, and we'd only have to cook once a week and get ready-made meals the rest of the week. 
+            <br>Good deal, right?<br>
+            <br>To feed six hungry college students though, we'd go through about $300 of groceries a week, and spend 2 hours at the grocery store each time.
+            That's far too long, so instead we opted to write a program that would categorize and order groceries for us to pick up.
+            <br><br>Kroger, our local grocery store chain, has a public API that allows adding items to a virtual cart, so we wrote a program that
+            takes in data from a spreadsheet, consolidates all of the different recipes, then adds it to the cart!
+            <br><br> Now, getting food for the week is just as fast (or slow) as figuring out what to cook.
+            <br><br>
+            <a href="https://github.com/Phreakester/ralph">Take a look at the code here!</a>
+         </p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>Starship Micromouse</h1>
+            <p>Spring 2023</p>
+         </div>
+         <p>
+            After leading Micromouse, I still wanted to create my very-own mouse, but had to make it a bit special.
+            There are these food delivery robots (Starships) that roam around UCLA's campus, so I decided to make a tiny one as a fun micromouse.
+            <br><br>
+            The hardest part about this one was just the design itself- I had to model the entire Starship myself, and design the PCB such that everything fit together.
+            Because of the model, the robot was already pretty large for the maze, so the PCB inside had to be as compact as possible.
+            <br><br>
+            As a mini Starship, it looks fantastic! I even put an LED into the flag so that it would blink like the real ones.
+            <br>
+            As a micromouse, however, it was not so great, since the front and back wheels made it challenging to turn accurately.
+            The next version will make it such that the front and back wheels aren't used at all, to hopefully prevent this issue.
+         </p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/mm_starship_pcb.png">
+               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
+            </div>
+            <div>
+               <img src="media/projects/mm_starship_wip.png"/>
+            </div>
+            <div>
+               <img src="media/projects/mm_keyboard.jpg"/>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>SystemVerilog RISC-V Processor</h1>
+            <p>Winter 2023</p>
+         </div>
          <p>This website is one of my current projects! Right now it's <em>VERY</em> under construction,
-         so there will be a lot more here soon.</p>
+         so there will be a lot more here soon.dj sal;fjlekwaj;fl jewaklfj dsj ;fjewka;fejwa;fjdaf ejwal;fjekwl;ajfkejwa;f jdwf
+      fjewaj fkel;wajf keja fkew;j</p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>IDEAHacks: BoomBox</h1>
+            <p>January 2023</p>
+         </div>
+         <p>Content</p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/ideahacks2_render.png">
+               <p>3D render of the BoomBox.</p>
+            </div>
+            <div>
+               <img src="media/projects/ideahacks2_cutout.png">
+               <p>3D cutout to show janky (but impressive) button mechanism.</p>
+            </div>
+            <div>
+               <img src="media/projects/ideahacks2_irl.png">
+               <p>The final working prototype.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>FPGA Brickbreaker</h1>
+            <p>Fall 2022</p>
+         </div>
+         <p>
+            I wrote SystemVerilog code from the ground up to create a version of the iconic Atari video game Brickbreaker on an Intel-Altera FPGA, playable on a VGA monitor with various game modes and difficulties.
+         </p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/mm_starship_pcb.png">
+               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>IEEE Digital Design, Architecture, and Verification</h1>
+            <p>Fall 2021 → Spring 2022</p>
+         </div>
+         
+         <p>IEEE Micromouse is an autonomous maze-solving robot project that I was a member of in 2020-21 and later became project lead of in 2021-22. 
+            On the left is my personal micromouse from when I was a project member. As the project was online that year, we designed IR PCBs instead of the entire robot. 
+            In the center is a render of the “stock” micromouse that I designed along with my co-lead for our students to learn with. 
+            And on the right, is one of the final robots. The board was successful and the students are currently putting their own custom micromouse PCBs together!</p>
+         
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/mm_irl.jpg">
+               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
+            </div>
+            <div>
+               <img src="media/projects/mm_render.png"/>
+            </div>
+            <div>
+               <img src="media/projects/mm_keyboard.jpg"/>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>IDEAHacks: LoRax</h1>
+            <p>Januaray 2020</p>
+         </div>
+         <p>Content
+            <a href="https://devpost.com/software/lorax-5gdt9i">Check out the devpost here!</a>
+         </p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/ideahacks_render.png">
+               <p>3D render of the tree-mounted node.</p>
+            </div>
+            <div>
+               <img src="media/projects/ideahacks_tree.png">
+               <p>Final 3D-printed prototype. Pretty dense for a breadboard-based device!</p>
+            </div>
+            <div>
+               <img src="media/projects/ideahacks_rock.png">
+               <p>The other node, designed to look like a rock.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>BOULDR</h1>
+            <p>Januaray 2020</p>
+         </div>
+         <p>Content</p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/drone.jpg">
+               <p>Our 3D printed and laser-cut drone chasis.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>Designing a Smarthome</h1>
+            <p>Januaray 2020</p>
+         </div>
+         <p>Content</p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>Drone Design</h1>
+            <p>Januaray 2020</p>
+         </div>
+         <p>One of my classes last year was a drone design class, which involved 3D modeling and manufacturing (through 3D printing and laser cutting) 
+            a drone from scratch. With a team of 4, this is the drone we designed:
+         </p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/drone.jpg">
+               <p>Our 3D printed and laser-cut drone chasis.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>IEEE Micromouse</h1>
+            <p>Fall 2020 → Spring 2021</p>
+         </div>
+         
+         <p>IEEE Micromouse is an autonomous maze-solving robot project that I was a member of in 2020-21 and later became project lead of in 2021-22. 
+            On the left is my personal micromouse from when I was a project member. As the project was online that year, we designed IR PCBs instead of the entire robot. 
+            In the center is a render of the “stock” micromouse that I designed along with my co-lead for our students to learn with. 
+            And on the right, is one of the final robots. The board was successful and the students are currently putting their own custom micromouse PCBs together!</p>
+         
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/mm_irl.jpg">
+               <p>Stock micromouse I designed for students to use.</p>
+            </div>
+            <div>
+               <img src="media/projects/mm_render.png"/>
+               <p>A render from Fusion 360 of the stock micromouse.</p>
+            </div>
+            <div>
+               <img src="media/projects/mm_keyboard.jpg"/>
+               <p>My personal micromouse from the COVID era.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>Marching Band RGB Prop Domes</h1>
+            <p>Fall 2019</p>
+         </div>
+         <p>During my senior year of high school, I was tasked with designing the electronics for LED-covered "domes" for my marching band's show, that was called "When Worlds Collide".
+            These domes essentially were remotely controlled PVC hemispheres that needed to light up on time during the show.
+            This involved determining the best radio transceivers to use over an entire football field, researching and purchasing the electronics, and writing reliable code for showtime.
+            See them in action below!
+         </p>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/IdI44sJ7Xrc?si=2dK6CuOzyvPr9V4H&amp;start=489" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
    </div>
    
