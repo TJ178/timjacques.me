@@ -6,8 +6,9 @@ html {
 
 body {
     background-color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
     background-image: url("../media/bg.jpg");
+    background-size: cover;
     background-attachment: fixed;
     background-repeat:no-repeat;
     background-position: center top;
@@ -71,12 +72,13 @@ a{
     background-color: rgba(69, 66, 49, 0.85);
     border-radius: 8px;
     width: 80%;
+    max-width: 1000px;
     color:white;
     margin:15px;
     padding: 10px;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-content:flex-start;
     align-items:center;
     text-align: left;
@@ -84,7 +86,7 @@ a{
 
 h1, p {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 .content {
@@ -158,12 +160,17 @@ h1, p {
     justify-content:space-evenly;
 }
 .image-holder > div{
-    width: min-content;
+    max-width: 100%;
 }
 
 .image-holder img {
-    height:300px;
+    display: block;
+    max-height: 300px;
     width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    padding-bottom: 0px;
 }
 
 .image-holder div p{
@@ -172,7 +179,12 @@ h1, p {
     text-align:center;
 }
 
-@media (max-width: 500px) {
+.yt-embed{
+    width:515px;
+    height:300px;
+}
+
+@media (max-width: 600px) {
     .header{
         flex-wrap: wrap;
         justify-content: center;
@@ -194,5 +206,21 @@ h1, p {
         width: 100%;
         height: 100%;
     }
-    
+
+    .container.project {
+        width:90%;
+    }
+}
+
+@media (max-width: 700px){
+    .yt-embed{
+        width:80%;
+        height:250px;
+    }
+}
+
+@media(min-width:1800px){
+    .container.project {
+        max-width:40%;
+    }
 }

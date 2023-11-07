@@ -35,7 +35,7 @@
             <br> With that in mind, I have a server at home that grabs the bus data, parses it down to just the times of the next buses, and offers that up as an HTTP server.
             Now, the ESP32 can just do a simple HTTP GET request, and we're in business.
             <br><br>
-            Engineering is about spending 3 hours to save 30 seconds everyday right?
+            Engineering is about spending 3 hours once to save 30 seconds everyday right?
             <br><br>
             <a href="https://github.com/TJ178/lametro">Take a look at the code here!</a>
          </p>
@@ -89,17 +89,17 @@
             <br>
             As a micromouse, however, it was not so great, since the front and back wheels made it challenging to turn accurately.
             The next version will make it such that the front and back wheels aren't used at all, to hopefully prevent this issue.
+            <br><br>
+            <a href="https://a360.co/3QsiEzM">Take a look at the <em>Starship in 3D</em> here!</a>
          </p>
          <div class="image-holder">
             <div>
                <img src="media/projects/mm_starship_pcb.png">
-               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
+               <p>In-progress screenshot of the internal PCB. The hole in the center is for the motor connectors to poke through.</p>
             </div>
             <div>
                <img src="media/projects/mm_starship_wip.png"/>
-            </div>
-            <div>
-               <img src="media/projects/mm_keyboard.jpg"/>
+               <p>Transparent screenshot of the Starship hull against an image of the real thing.</p>
             </div>
          </div>
       </div>
@@ -109,9 +109,29 @@
             <h1>SystemVerilog RISC-V Processor</h1>
             <p>Winter 2023</p>
          </div>
-         <p>This website is one of my current projects! Right now it's <em>VERY</em> under construction,
-         so there will be a lot more here soon.dj sal;fjlekwaj;fl jewaklfj dsj ;fjewka;fejwa;fjdaf ejwal;fjekwl;ajfkejwa;f jdwf
-      fjewaj fkel;wajf keja fkew;j</p>
+         <p>For my computer architecture honors section, I was tasked with implementing a limited-instruction-set RISC-V out of order processor in SystemVerilog.
+            Specifically, I needed to implement a few R, S, and I-type instructions in a 2-issue, 7-stage pipelined processor that ran in simulation in ModelSim.
+            <br><br>
+            Using ModelSim, I was able to write, simulate, and debug all of the various modules related to the architecture (Re-Order Buffer, Reservation Station, etc).
+            <br><br>
+            <a href="https://github.com/TJ178/ece116c_risc-v">Take a look at the code here!</a>
+         </p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>8-bit Transitor Adder</h1>
+            <p>Winter 2022</p>
+         </div>
+         <p>One of my classes last year was a drone design class, which involved 3D modeling and manufacturing (through 3D printing and laser cutting) 
+            a drone from scratch. With a team of 4, this is the drone we designed:
+         </p>
+         <div class="image-holder">
+            <div>
+               <img src="media/projects/drone.jpg">
+               <p>Our 3D printed and laser-cut drone chasis.</p>
+            </div>
+         </div>
       </div>
 
       <div class="container project">
@@ -119,7 +139,13 @@
             <h1>IDEAHacks: BoomBox</h1>
             <p>January 2023</p>
          </div>
-         <p>Content</p>
+         <p>For my second hackathon, the theme was "gameifying", so my team decided to make household chores competitive!
+            <br>BoomBox was designed to have a massive, satisfying button to press that would give the user satisfaction for completing their chores.
+            <br>My main contribution was again in the hardware, as I designed the enclosure and giant RGB button in CAD. Without a better mechanism, I
+            designed the button's acuation around pen springs, since no larger springs were available, and the actual press detection around an IR break sensor.
+            <br><br>
+            <a href="https://devpost.com/software/boombox-9dulgi">Check out the devpost here!</a>
+         </p>
          <div class="image-holder">
             <div>
                <img src="media/projects/ideahacks2_render.png">
@@ -144,10 +170,26 @@
          <p>
             I wrote SystemVerilog code from the ground up to create a version of the iconic Atari video game Brickbreaker on an Intel-Altera FPGA, playable on a VGA monitor with various game modes and difficulties.
          </p>
+      </div>
+
+      <div class="container project">
+         <div class="container-header">
+            <h1>BOULDR</h1>
+            <p>Spring 2022</p>
+         </div>
+         <p>
+            BOULDR is a website dedicated to browsing and rating certain routes at climbing gyms.
+            Together with 3 other people, I designed BOULDR for my software construction class.
+            <br><br>The website used a Firebase backend, with the ability to search and filter for various features.
+            Users were able to log in, keep favorites, leave reviews, browse various climbing gyms' offerings.
+            Gym staff were able to interactively add and edit database content, allowing for a completely usable experience.
+            <br><br>BOULDR uses React.js, Firebase Auth, Firebase Store, and more.
+            <br><br><a href="https://github.com/TJ178/BOULDR">Take a look at the code here!</a>
+         </p>
          <div class="image-holder">
             <div>
-               <img src="media/projects/mm_starship_pcb.png">
-               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
+               <img src="media/projects/bouldr.png">
+               <p>The homepage for BOULDR.</p>
             </div>
          </div>
       </div>
@@ -158,21 +200,19 @@
             <p>Fall 2021 → Spring 2022</p>
          </div>
          
-         <p>IEEE Micromouse is an autonomous maze-solving robot project that I was a member of in 2020-21 and later became project lead of in 2021-22. 
-            On the left is my personal micromouse from when I was a project member. As the project was online that year, we designed IR PCBs instead of the entire robot. 
-            In the center is a render of the “stock” micromouse that I designed along with my co-lead for our students to learn with. 
-            And on the right, is one of the final robots. The board was successful and the students are currently putting their own custom micromouse PCBs together!</p>
+         <p>
+            IEEE's DAV project is a FPGA and digital design introduction that I participated in as a member during 2021-22 and later became project lead for in 2022-23.
+            Students would learn SystemVerilog from the ground up, and complete more complex projects over the course of the school year, including the VGA & I2C protocols.
+            At the end of the year, students were given the choice between completing a capstone project of their choice or to complete a Digital Audio Visualizer, which involves
+            implementing a Fast Fourier Transform in hardware and displaying the output of a microphone on screen.
+            <br><br> When I completed DAV, I did the Digital Audio Visualizer project, and implemented an FFT on the FPGA.
+
+         </p>
          
          <div class="image-holder">
             <div>
                <img src="media/projects/mm_irl.jpg">
-               <p>Stock micromouse I designed for students to use.f dsjaklfjew;l fjelkwa jfkl;ejwal; kfekw jfejw lfjwel j</p>
-            </div>
-            <div>
-               <img src="media/projects/mm_render.png"/>
-            </div>
-            <div>
-               <img src="media/projects/mm_keyboard.jpg"/>
+               <p>Placeholder Image</p>
             </div>
          </div>
       </div>
@@ -180,9 +220,16 @@
       <div class="container project">
          <div class="container-header">
             <h1>IDEAHacks: LoRax</h1>
-            <p>Januaray 2020</p>
+            <p>January 2022</p>
          </div>
-         <p>Content
+         <p>
+            LoRax is a forest fire detection platform that I designed along with 4 other people during the hardware hackathon IDEAHacks in 2020. Essentially, LoRax was a mesh-networked node system that would use an array of sensors to detect weather patterns and potential wildfires.
+            <br><br>
+            My part in the design was to choose the parts and overall hardware design, so I spent my time in CAD creating a 3D-printable enclosure for a tree-mounted node. Additionally,
+            I helped write portions of the software that interfaced with the array of sensors, creating hardware proof-of-concepts for the more computer science-inclined group members to refer to.
+            <br><br>
+            Even through it was my first hackathon, we won 3rd place!
+            <br><br>
             <a href="https://devpost.com/software/lorax-5gdt9i">Check out the devpost here!</a>
          </p>
          <div class="image-holder">
@@ -198,35 +245,18 @@
                <img src="media/projects/ideahacks_rock.png">
                <p>The other node, designed to look like a rock.</p>
             </div>
-         </div>
-      </div>
-
-      <div class="container project">
-         <div class="container-header">
-            <h1>BOULDR</h1>
-            <p>Januaray 2020</p>
-         </div>
-         <p>Content</p>
-         <div class="image-holder">
             <div>
-               <img src="media/projects/drone.jpg">
-               <p>Our 3D printed and laser-cut drone chasis.</p>
+               <img src="media/projects/ideahacks_tree.gif">
+               <p>The tree node attached to a real tree.</p>
             </div>
+            
          </div>
-      </div>
-
-      <div class="container project">
-         <div class="container-header">
-            <h1>Designing a Smarthome</h1>
-            <p>Januaray 2020</p>
-         </div>
-         <p>Content</p>
       </div>
 
       <div class="container project">
          <div class="container-header">
             <h1>Drone Design</h1>
-            <p>Januaray 2020</p>
+            <p>Winter 2022</p>
          </div>
          <p>One of my classes last year was a drone design class, which involved 3D modeling and manufacturing (through 3D printing and laser cutting) 
             a drone from scratch. With a team of 4, this is the drone we designed:
@@ -246,9 +276,13 @@
          </div>
          
          <p>IEEE Micromouse is an autonomous maze-solving robot project that I was a member of in 2020-21 and later became project lead of in 2021-22. 
-            On the left is my personal micromouse from when I was a project member. As the project was online that year, we designed IR PCBs instead of the entire robot. 
-            In the center is a render of the “stock” micromouse that I designed along with my co-lead for our students to learn with. 
-            And on the right, is one of the final robots. The board was successful and the students are currently putting their own custom micromouse PCBs together!</p>
+            Students learned how to build their own robotic mouse from the ground up, learning about embedded design, power systems, PID control, and maze-solving algorithms.
+            During the year that I participated, I won second place in the competition for making my mouse super quick!
+            <br>
+            This project involved PCB design, lots of embedded programming, and a solid foundation for making something of your own.
+            <br><br>
+            In the photos below, you can see the design for the stock micromouse that we used to teach the students before they were given the chance to build their own micromouse.
+         </p>
          
          <div class="image-holder">
             <div>
@@ -261,7 +295,7 @@
             </div>
             <div>
                <img src="media/projects/mm_keyboard.jpg"/>
-               <p>My personal micromouse from the COVID era.</p>
+               <p>My personal micromouse from the COVID era. We only designed the IR board, due to the online nature of the project.</p>
             </div>
          </div>
       </div>
@@ -276,7 +310,7 @@
             This involved determining the best radio transceivers to use over an entire football field, researching and purchasing the electronics, and writing reliable code for showtime.
             See them in action below!
          </p>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/IdI44sJ7Xrc?si=2dK6CuOzyvPr9V4H&amp;start=489" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         <iframe class="yt-embed" src="https://www.youtube.com/embed/IdI44sJ7Xrc?si=2dK6CuOzyvPr9V4H&amp;start=489" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
    </div>
    
